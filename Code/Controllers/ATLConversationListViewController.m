@@ -518,7 +518,7 @@ NSString *const ATLConversationListViewControllerDeletionModeEveryone = @"Everyo
     } else if (tableView == self.searchController.searchResultsTableView) {
         return _searchQueryController;
     } else {
-        @throw [NSException exceptionWithName:NSInternalInconsistencyException reason:@"TableView doesn't have query controller" userInfo:nil];
+        @throw [NSException exceptionWithName:NSInternalInconsistencyException reason:@"Controller does not support additional tableviews." userInfo:nil];
     }
 }
 
